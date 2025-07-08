@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var games = new List<string> { "League Of Legends", "Team Fight Tactics", "Hearthstone" };
+            List<string> orderedGames = games.OrderBy(g => g.Length).ToList();
         }
     }
 }
