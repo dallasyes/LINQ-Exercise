@@ -6,6 +6,10 @@
         {
             var games = new List<string> { "League Of Legends", "Team Fight Tactics", "Hearthstone" };
             List<string> orderedGames = games.OrderBy(g => g.Length).ToList();
+            foreach (var str in orderedGames)
+            {
+                Console.WriteLine(str);
+            }
         }
     }
 }
